@@ -1,0 +1,54 @@
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+
+.navbar>a {
+
+
+   text-decoration: none;
+   gap: 20px;
+   color: rgb(231, 226, 236);
+   padding: 10px;
+   background-color: blue;
+   border-radius: 5px;
+   border: 1px solid black;
+}
+
+.navbar {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   ;
+   gap: 120px;
+   background-color: aqua;
+}
+
+main section>h2 {
+   text-align: center;
+   font-size: 32px;
+   color: #222;
+   margin: 30px 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+
+background-color: rgb(105, 207, 211);
+width: 30%;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card img{
+   height: 220px;
+width: 100%;
+object-fit: cover ;
+}
+.card h2{
+font-size: 23px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 18px 20px;
+
+
+}
