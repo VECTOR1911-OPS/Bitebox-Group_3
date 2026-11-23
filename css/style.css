@@ -1,10 +1,11 @@
-div{
+ 
+ /* {
     background-color: rgb(243, 234, 234);
     align-items: center;
-}
+} */
 
 
-.welcome-section{
+/* .welcome-section{
     background-color: brown;
     width: 100%;
     height: 100vh;
@@ -13,11 +14,11 @@ div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
     
-.navbar{
+/* .navbar{
     height: 80px;
     color: black;
    font-weight: bold;
@@ -65,8 +66,113 @@ main section>h2{
              font-size: 20px;
              margin: 10px 20px;
              font-family: arial, sans-serif;
+
+              
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+button,
+input {
+         font-family: inherit;
+}
+
+button {
+         cursor: pointer;
+         
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/* navbar */
+.navbar-container {
+                    background-color: brown;
+                    padding: 15px 6%;
+                    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+                    position: sticky;
+                    top: 0;
+                    z-index: 1000;
+}
+.navbar {
+         max-width: 1400px;
+         background-color: rgb(243, 234, 234);
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 20px;
+}
+
+.logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+}
+
+.logo img {
+             height: 40px;
+             width: 40px;
+             border-radius: 50%;
+}
+
+.nav-links {
+             display: flex;
+             align-items: center;
+                gap: 15px;
+                color: #fff;
+}
+
+.links {
+         color: black;
+         font-size: 18px;
+         font-weight: 600;
+         transition: all 0.3s ease;
+}
+
+.link:hover {
+             color: yellow;
+             text-decoration: underline;
+}
+
+.logon-link {
+              margin-left: 20px;
+}
+.login-btn {
+            background-color: #fff;
+            color: brown;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            fosnt-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+}
+
+login-btn:hover {
+                 background-color: brown;
+}
+                 
     
 
  
