@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -94,6 +94,24 @@ main button {
 }
 
 
+main > section:nth-of-type(3) {
+    background-color: #ffe2d2;
+    text-align: center;
+}
+
+main > section:nth-of-type(3) > div {
+    display: inline-block;
+    margin: 20px;
+}
+
+main > section:nth-of-type(3) img {
+    width: 300px;
+    height: 250px;
+}
+
+main > section:nth-of-type(4) {
+    text-align: center;
+}
 
 
 
@@ -141,4 +159,96 @@ footer p {
     margin-top: 20px;
     padding: 15px;
     border-top: 1px solid #555;
+} */
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#fffaf5;
+    color: #333;
+    line-height: 1.6;
+}
+button,input{
+    font-family: inherit;
+
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+/* navbar*/
+.Navbar-container{
+
+    background-color: #eaeaea;
+    padding: 15px 6%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: sticky;
+    top: 0;
+z-index: 1000;
+}
+.navbar{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-width: 800;
+
+}
+.logo img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Nav-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aquamarine;
+}
+.links{
+    color: #333;
+    font-size: 20px;
+    font-weight: 200    ;
+   transition: 0.3s; 
+}
+
+.links:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.login-link{
+    margin-left: 20px;
+}
+.login-btn{
+
+background-color: rgb(147, 98, 7);
+color: white;
+padding: 10px 25px;
+border: none;
+border-radius: 20px;
+font-size: 15px;
+font-weight: 600;
+transition: 0.3s;
+}
+.login-btn:hover{
+    background-color: rgb(231, 188, 108);
 }
