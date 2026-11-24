@@ -252,3 +252,166 @@ transition: 0.3s;
 .login-btn:hover{
     background-color: rgb(231, 188, 108);
 }
+/* welcome section*/
+
+.welcome-section{
+    /* min-height: 400px;
+    background-size: cover;
+    background-position: center;
+   /* background: #020024;
+background: #EEAECA; */
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 50px 20px;
+color: white;
+background: linear-gradient(rgba(40,20,9,0.65),rgba(40,20,5,.65),url(../assets/images/premium_photo-1695558759869-5e7487ce1a6b.avif));
+
+}
+.heading{
+    font-size: 35px;
+    font-weight: 800;
+
+}
+.para{
+    font-size: 22px;
+    color: coral;
+}
+.para strong{
+    color: green;
+}
+/*common section styling*/
+.mainbar{
+    border: none;
+    border-top: 1px solid white
+
+}
+.section-title{
+text-align: center;
+font-size: 32px;
+color: orange;
+margin-bottom: 35px 0px;
+font-weight: 800;
+position: relative;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: orange;
+    margin:12px auto 0 ;
+    border-radius: 5px;
+}
+/*featured-dishes*/
+.featured-dishes{
+padding: 40px 6%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 25px;
+max-width: 1500px;
+}
+.featured-dishes .section-title{
+    grid-column: 1/-1;
+}
+.card{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3;
+    border: 1px solid orange
+
+
+}
+
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+
+}
+.card h2{
+    font-size: 22px;
+    color: black;
+    padding: 15px 18px 5px;
+}
+.card p {
+    padding: 5px 18px;
+    font-size: 14px;
+}
+.card p span{
+    color: yellow;
+
+}
+.card ul{
+    padding: 5px 18px 5px 38px;
+    font-size: 14px;
+}
+.card ul li{
+    margin-bottom: 5px;
+}
+.card p del{
+    color: rgb(214, 37, 37);
+}
+.card p strong{
+    color: green;
+    font-size: 19px;
+}
+.card-btn{
+    width: 36%;
+    margin: 18px 18px 0;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+}
+.offer-section{
+   background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77);
+    margin: 30px 6%;
+    padding: 45px 7%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    color: white;
+}
+.offer-content{
+flex: 1;
+
+}
+.offer-content h2{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.offer-content p strong{
+    color:#ff0000;
+    
+}
+.offer-content a{
+    display: block;
+    margin: 15px;
+    background-color: white;
+    color: orange;
+    padding: 13px 30px;
+    text-align: center
+}
+
+.offer-image{
+width: 100%;
+max-width: 300px;
+height: 250px;
+object-fit: contain;
+
+}
