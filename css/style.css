@@ -104,7 +104,7 @@ a{
 
 /* navbar */
 .navbar-container {
-                    background-color: brown;
+                    background-color: rgb(248, 240, 240);
                     padding: 15px 6%;
                     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
                     position: sticky;
@@ -150,12 +150,12 @@ a{
          transition: all 0.3s ease;
 }
 
-.link:hover {
+.links:hover {
              color: yellow;
              text-decoration: underline;
 }
 
-.logon-link {
+.login-link {
               margin-left: 20px;
 }
 .login-btn {
@@ -169,8 +169,10 @@ a{
             transition: all 0.3s;
 }
 
-login-btn:hover {
+.login-btn:hover {
                  background-color: brown;
+                color: #fff;
+                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
                  
     
