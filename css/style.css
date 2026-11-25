@@ -105,6 +105,7 @@ a{
 /* navbar */
 .navbar-container {
                     background-color: rgb(182, 179, 254);
+                    justify-content: space-between;
                     padding: 15px 6%;
                     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
                     position: sticky;
@@ -116,7 +117,7 @@ a{
          background-color: rgb(182, 179, 254);
          margin: auto;
          display: flex;
-         justify-content: space-between;
+          justify-content: space-between; 
          align-items: center;
          gap: 20px;
 }
@@ -140,8 +141,9 @@ a{
 .nav-links {
              display: flex;
              align-items: center;
-                gap: 15px;
-                color: #fff;
+             gap: 15px;
+             color: #fff;
+              /* justify-content: space-between;  */
 }
 
 .links {
@@ -160,7 +162,7 @@ a{
               margin-left: 20px;
 }
 .login-btn {
-            background-color: #fff;
+            background-color: skyblue;
             color: brown;
             border: none;
             padding: 10px 25px;
@@ -344,30 +346,35 @@ object-fit: contain;
 
 }
 /* customer riview */
-.review {
+.review-section{
           /* backgroung-color: read; */
           padding: 40px 6%;
           display: grid;
-          grid-templet-colum: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           gap: 20px;
           text-align: center;
 
           }
        
-.section-titel{
+ .section-titel{
                 grid-column: 1/-1;
+                padding: 20px 30px;
+                text-align: center;
+                color: #c91212;
+                background-color: hsl(197, 93%, 49%);
 }
 .review-card{
               background-color: #c91212;
-              border-radius: 15px;
-              padding: 30px 20px;
+              border-radius: 20px;
+              padding: 20px 30px;
               text-align: center;
+              width: fit-content;
 
               
 }
 .review-card img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -381,16 +388,16 @@ object-fit: contain;
                  margin-bottom: 10px;
                  text-transform: capitalize;
 }
-.review-card p{
-                color: #f4f4f4;
-                font-size: 14px;
-                margin-bottom: 10px;
+.review-card p:last-child{
+                
+                font-size: 30px;
+                
 }
 .newslatter-section{
-                     background-color: #e6dcdc;
+                     background-color: aquamarine;
                      padding:40px 6%;
                      display: flex;
-                     align: center; 
+                     align-items: center; 
                      justify-content: space-between;
                      gap: 30px;
 }
@@ -407,7 +414,145 @@ object-fit: contain;
 }
 .newsletter.content p{
                         color: #dc2828;
+                    
 }
+
+.newsletter-form{
+                  flex:1;
+}
+.newsletter-form input{
+                         flex: 1;
+                         outline: none;
+                         padding: 12px;
+                         font-size: 14px;
+                         border-radius: 30px;
+
+}
+.newsletter-form button{
+                          border: none;
+                          background-color: #c91212;
+                          color: #f4f4f4;
+                          padding: 12px 25px;
+                          border-radius: 30px;
+                          font-width: 600;
+}
+
+.fotter-section  {
+    background-color: #1f1f1f;
+    color: #e5e5e5;
+    padding: 40px 8% 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* each column */
+ div {
+    flex: 1 1 200px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* logo + brand name */
+footer h3 img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer mark {
+    background: none;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer li:hover {
+    color: #ff6b35;
+    transform: translateX(4px);
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* divider and copyright take the full row */
+footer hr {
+    flex-basis: 100%;
+    border: none;
+    border-top: 1px solid #444;
+    margin: 10px 0 0;
+}
+
+footer p {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------- */
+@media (max-width: 768px){
+     .navbar {
+               flex-direction: column;
+               gap: 15px;
+     }
+
+     .nav-links {
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 8px;
+     }
+     .welcome-section{
+                    main-hight: 300px;
+
+     }
+     #heading {
+                font-size: 30px;
+
+     }
+     .featured-dishes,
+     .review-section{
+                      grid-template-columns: 1fr;
+     }
+     .todays-special-offer{
+                            flex-direction: column;
+                            text-align:center;
+     }
+     .offer-content h2{
+                        font-size: 27px;   
+    }
+    .newslatter-section {
+                           flex-direction: column;
+    }
+    .section-titel {
+                     font-size: 27px;
+    }
+    
+}
+
+
 
 
     
